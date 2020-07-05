@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/paycenter?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: xinglong828
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+unionpay:
+  EncryptMechine:
+    ip: 10.10.13.200
+    port: 6666
+  msgserver:
+    ip: 124.95.129.105
+    port: 10000
+  tpdu: 6000000000
