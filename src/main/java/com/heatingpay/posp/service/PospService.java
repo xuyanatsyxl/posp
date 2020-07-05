@@ -15,15 +15,10 @@ public class PospService {
     @Value("${unionpay.tpdu}")
     private String tpdu;
 
+    public String downloadTmk() {
+        String licenseCode = ;
+        String serialNoString;
 
-    /**
-     * 下载商户的终端主密钥（TMK)
-     *
-     * @param licenseCode 授权码
-     * @param serialNo 终端序列号
-     * @return
-     */
-    public String downloadTmk(String licenseCode, String serialNo) {
         return null;
     }
 }
