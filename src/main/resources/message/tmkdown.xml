@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE isopackager PUBLIC
+        "-//jPOS/jPOS Generic Packager DTD 1.0//EN"
+        "http://jpos.org/dtd/generic-packager-1.0.dtd">
+
+<!-- ISO 8583:1993 (BINARY) field descriptions for GenericPackager -->
+<isopackager>
+    <isofield id="0" length="4" name="Message Type Indicator" pad="false" class="org.jpos.iso.IFB_NUMERIC"/>
+    <isofield id="1" length="64" name="Bitmap" class="org.jpos.iso.IFB_BITMAP"/>
+    <isofield id="12" length="6" name="受卡方所在地时间" pad="true" class="org.jpos.iso.IFB_NUMERIC"/>
+    <isofield id="13" length="4" name="受卡方所在地日期" pad="true" class="org.jpos.iso.IFB_NUMERIC"/>
+    <isofield id="20" length="40" name="授权码" class="org.jpos.iso.IFA_LLCHAR"/>
+    <isofield id="25" length="2" name="服务点条件码" pad="true" class="org.jpos.iso.IFB_NUMERIC"/>
+    <isofield id="39" length="2" name="应答码" pad="true" class="org.jpos.iso.IFA_NUMERIC"/>
+    <isofield id="41" length="8" name="受卡机终端标识码" pad="false" class="org.jpos.iso.IFA_BINARY"/>
+    <isofield id="42" length="15" name="受卡方标识吗" pad="false" class="org.jpos.iso.IFA_BINARY"/>
+    <isofield id="43" length="40" name="商户名称" pad="false" class="org.jpos.iso.IFA_BINARY"/>
+    <isofield id="47" length="512" name="交易类型参数" pad="true" class="org.jpos.iso.IFA_LLLCHAR"/>
+    <isofield id="60" length="11" name="自定义域" pad="true" class="org.jpos.iso.IFB_LLLNUM"/>
+    <isofield id="62" length="40" name="TMK" pad="true" class="org.jpos.iso.IFA_LLLBINARY"/>
+    <isofield id="63" length="163" name="终端序列号" class="org.jpos.iso.IFA_LLLCHAR"/>
+</isopackager>
